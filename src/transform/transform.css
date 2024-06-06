@@ -1,0 +1,46 @@
+.main {
+  /* border: 2px solid yellow; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  /* height: 400px; */
+  align-items: center;
+  /* position: relative; */
+  /* overflow: hidden; */
+}
+
+.box-1 {
+  background-color: red;
+  /* position: absolute; */
+  width: 150px;
+  height: 150px;
+  transition-duration: 500ms;
+  transition-timing-function: ease;
+}
+.main-context-2 {
+}
+.box-2 {
+  background-color: yellowgreen;
+  /* position: absolute; */
+  width: 150px;
+  height: 150px;
+  transition-duration: 500ms;
+  transition-timing-function: ease;
+  transform-origin: top left;
+}
+
+.box-2:hover {
+  transform: rotate(180deg);
+}
+.box-1:hover {
+  transform: rotate(30deg);
+}
+
+/* 
+    <div className="main">
+      <div className="box-1"></div>
+      <div className="box-2"></div>
+      <div className="main-context-2"></div>
+    </div>
+*/
